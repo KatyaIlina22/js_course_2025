@@ -21,8 +21,8 @@ if (confirm('Почати тестування?')) {
     document.write(` 3)Сформувати список з тих цін, які більші за попереднє значення: ${pricesGreaterThanPrevious}<br>`)
     //   4)Сформувати новий масив, що міститиме значення цін у відсотках стосовно максимального
     const max = pricesHistory.reduce((prevMax, price) => price > prevMax ? price : prevMax)
-    const pricesAsAPercentageOfTheMaximum = pricesHistory.map(price => Math.floor(price * 100 / max))
-    document.write(`4)Сформувати новий масив, що міститиме значення цін у відсотках стосовно максимального: ${pricesAsAPercentageOfTheMaximum}<br>`)
+    const pricesAsAPercentageOfTheMaximum = pricesHistory.map(price => price * 100 / max)
+    document.write(`4)Сформувати новий масив, що міститиме значення цін у відсотках стосовно максимального: ${pricesAsAPercentageOfTheMaximum.map(p => p.toFixed(2))} <br>`)
 
     //   5)Підрахувати кількість змін цін
     const numberOfPriceChanges = pricesHistory.reduce((prevCount, price, index, baseArr) => index > 0 && price !== baseArr[index - 1] ? prevCount += 1 : prevCount, 0)
