@@ -4,7 +4,7 @@ document.write(`<h1>Задача 5.  З використанням замика�
 if (confirm('Почати тестування?')) {
 function externalFunc(min:number, max:number):()=> number {
     let num:number = min - 1;
-    function internalFunc() {
+    function internalFunc():number {
         if (num < max) {
             num++;
 
