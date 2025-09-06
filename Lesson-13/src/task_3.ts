@@ -4,7 +4,7 @@ document.write(`<h1> Задача 7. Тренажер додавання. Кож
 if (confirm('Почати тестування?')) {
 setInterval(()=>{
         const num1:number = -10+Math.floor(Math.random()*20)
-         const num2:number = -10+Math.floor(Math.random()*20)
+         const num2:number = 0+Math.floor(Math.random()*20)
          const sum:number = num1+num2
        let userAnswer:string|null = prompt(`${num1}+${num2}`,'0')
       let userSum:number = userAnswer !==null?parseInt(userAnswer):NaN
