@@ -2,7 +2,7 @@
 document.write(`<h1> Задача 7. Тренажер додавання. Кожні 10 секунд користувачу задають випадковий приклад з додавання двох цифр і робиться перевірка.</h1>`)
 
 if (confirm('Почати тестування?')) {
-setInterval(()=>{
+ setInterval(()=>{
         const num1:number = 0+Math.floor(Math.random()*30)
          const num2:number = 0+Math.floor(Math.random()*30)
          const sum:number = num1+num2

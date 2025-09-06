@@ -4,18 +4,18 @@ if (confirm('Почати тестування?')) {
     document.write(`<h1>Задача 1. Генерація всіх підмножин: Реалізуйте рекурсивну функцію, яка генерує всі можливі підмножини заданого масиву. Наприклад, для масиву [1, 2, 3] можливі підмножини: [], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3].</h1>`)
     
 const array:number[] = [1,2,3]
-function matrix(array:number[],index:number=0,tempArr:number[]=[]):any {
+function getSubsets(array:number[],index:number=0,tempArr:number[]=[]):any {
  
     if(index===array.length){ document.write(`[${tempArr}]<br>`)
     return
     }
     
-matrix(array,index+1,tempArr)
+getSubsets(array,index+1,tempArr)
 tempArr.push(array[index])
-matrix(array,index+1,tempArr)
+getSubsets(array,index+1,tempArr)
 tempArr.pop()
 }
-matrix(array)
+getSubsets(array)
     document.write(`
     <br></br>
     <a href="./index.html">назад</a>`)}
