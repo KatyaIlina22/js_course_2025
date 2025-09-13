@@ -6,7 +6,7 @@ type Period = {
     year:number
 }
 document.write(`<h1>Задача 2. Розробити функцію, у яку передають об’єкт (день, місяць, рік). Визначити, який буде рік через N місяців.
-</h1>>`)
+</h1>`)
 
 function getYear(period:Period,numberOfMonth:number):number {
     let newMonth = period.month+numberOfMonth
@@ -18,5 +18,8 @@ let period:Period={
     month:12,
     year:2005,
 }
-let numberOfMonth:number = 24
+let userNumberOfMonth:string|null = prompt(`Вкажіть кількість місяців`,'24')
+let numberOfMonth:number = userNumberOfMonth!==null?parseInt(userNumberOfMonth):NaN
+
+
     document.write(`який буде рік через ${numberOfMonth} місяців: ${getYear(period,numberOfMonth)}<br>`)}
