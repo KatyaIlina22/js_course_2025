@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script/task_2.js"></script>
+  </head>
+  <style>
+    .selected {
+      border: 2px solid green;
+    }
+    .page__conteiner {
+      max-inline-size: 1200px;
+      margin-inline: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+      gap: 20px;
+    }
+    .product {
+      position: relative;
+      overflow: hidden;
+    }
+    .product__images {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+    }
+    .product__logo {
+      position: absolute;
+      z-index: 10;
+      top: 10%;
+      left: 10%;
+      background-color: red;
+      color: white;
+      border-radius: 5px;
+      padding-inline: 5px;
+      padding-block: 5px;
+    }
+    .product__image {
+      aspect-ratio: 100/100;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+
+      margin-bottom: 25px;
+      transition: all 0.5s;
+    }
+    .product__image:hover {
+      transform: scale(1.2);
+    }
+    .product__link {
+      color: black;
+      text-decoration: none;
+    }
+    .product__price {
+      color: red;
+      font-size: 24px;
+    }
+  </style>
+  <body>
+    <div class="page__conteiner">
+      <div class="products">
+        <div class="product">
+          <div class="product__images">
+            <div class="product__logo">акція</div>
+            <img class="product__image" src="./img/img_1.webp" alt="" />
+          </div>
+          <div class="product__info">
+            <div class="product__text">
+              <a class="product__link" href=""
+                >Ноутбук Acer Nitro Lite NL16-71G-56P7
+              </a>
+            </div>
+            <div class="product__price">31 999₴</div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product__logo">акція</div>
+          <div class="product__images">
+            <img class="product__image" src="./img/img_1.webp" alt="" />
+          </div>
+          <div class="product__info">
+            <div class="product__text">
+              <a class="product__link" href=""
+                >Ноутбук Acer Nitro Lite NL16-71G-56P7
+              </a>
+            </div>
+            <div class="product__price">27 999₴</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__logo">топ продажів</div>
+          <div class="product__images">
+            <img class="product__image" src="./img/img_1.webp" alt="" />
+          </div>
+          <div class="product__info">
+            <div class="product__text">
+              <a class="product__link" href=""
+                >Ноутбук Acer Nitro Lite NL16-71G-56P7
+              </a>
+            </div>
+            <div class="product__price">16 999₴</div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__logo">топ продажів</div>
+          <div class="product__images">
+            <img class="product__image" src="./img/img_1.webp" alt="" />
+          </div>
+          <div class="product__info">
+            <div class="product__text">
+              <a class="product__link" href=""
+                >Ноутбук Acer Nitro Lite NL16-71G-56P7</a
+              >
+            </div>
+            <div class="product__price">29 999₴</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

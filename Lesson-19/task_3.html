@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script/task_3.js"></script>
+  </head>
+  <style>
+    .lists {
+      display: flex;
+      gap: 10px;
+    }
+    .general,
+    .favorites {
+      width: 12%;
+      padding: 5px;
+      height: 200px;
+      border: 2px solid black;
+    }
+    .general__item {
+      border: 2px solid black;
+    }
+    .add,
+    .remove {
+      position: relative;
+    }
+    .add::after {
+      content: "➡️";
+      position: absolute;
+      left: 80%;
+      bottom: 0%;
+    }
+    .remove::after {
+      content: "⬅️";
+      position: absolute;
+      left: 80%;
+      bottom: 0%;
+    }
+  </style>
+  <body>
+    <div class="lists">
+      <div class="general__list general">
+        <div>Загальний список</div>
+        <div class="general__item add">Jonh Depp</div>
+        <div class="general__item add">Sara Wik</div>
+        <div class="general__item add">Den Miro</div>
+        <div class="general__item add">Alan Woo</div>
+        <div class="general__item add">Olga Sich</div>
+        <div class="general__item add">Ivan Hal</div>
+      </div>
+
+      <div class="favorite__list favorites">
+        <div>Обранні для змагання</div>
+      </div>
+    </div>
+  </body>
+</html>

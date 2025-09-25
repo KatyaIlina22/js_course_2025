@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script/task_2.js"></script>
+  </head>
+  <body>
+    <h1>Калькулятор вартості подорожі</h1>
+    <div class="stage">
+      <h4>Етап 1</h4>
+      <label for="transport">транспорт</label>
+      <select class="transport">
+        <option value="1000">авто - 1000грн</option>
+        <option value="700">автобус - 700грн</option>
+        <option value="70000">літак - 7000грн</option>
+      </select>
+
+      <div class="food">
+        <label>
+          <input type="checkbox" value="200" />
+          сніданок - 200грн
+        </label>
+
+        <label>
+          <input type="checkbox" class="meal1" value="600" />обід -
+          600грн</label
+        >
+        <label>
+          <input type="checkbox" class="meal1" value="800" />вечеря -
+          800грн</label
+        >
+      </div>
+      <div class="guide">
+        <label> <input type="radio" name="guide1" value="500" />гід 1 </label>
+        <label> <input type="radio" name="guide1" value="800" />гід 2</label>
+        <label> <input type="radio" name="guide1" value="400" />гід 3</label>
+      </div>
+    </div>
+    <div class="stage">
+      <h4>Етап 2</h4>
+      <label for="transport">транспорт</label>
+      <select class="transport">
+        <option value="1000">авто - 1000грн</option>
+        <option value="700">автобус - 700грн</option>
+        <option value="70000">літак - 7000грн</option>
+      </select>
+
+      <div class="food">
+        <label>
+          <input type="checkbox" value="200" />
+          сніданок - 200грн
+        </label>
+
+        <label>
+          <input type="checkbox" class="meal1" value="600" />обід -
+          600грн</label
+        >
+        <label>
+          <input type="checkbox" class="meal1" value="800" />вечеря -
+          800грн</label
+        >
+      </div>
+      <div class="guide">
+        <label> <input type="radio" name="guide2" value="500" />гід 1 </label>
+        <label> <input type="radio" name="guide2" value="800" />гід 2</label>
+        <label> <input type="radio" name="guide2" value="400" />гід 3</label>
+      </div>
+    </div>
+    <div class="stage">
+      <h4>Етап 3</h4>
+      <label for="transport">транспорт</label>
+      <select class="transport">
+        <option value="1000">авто - 1000грн</option>
+        <option value="700">автобус - 700грн</option>
+        <option value="70000">літак - 7000грн</option>
+      </select>
+
+      <div class="food">
+        <label>
+          <input type="checkbox" value="200" />
+          сніданок - 200грн
+        </label>
+
+        <label>
+          <input type="checkbox" class="meal1" value="600" />обід -
+          600грн</label
+        >
+        <label>
+          <input type="checkbox" class="meal1" value="800" />вечеря -
+          800грн</label
+        >
+      </div>
+      <div class="guide">
+        <label> <input type="radio" name="guide3" value="500" />гід 1 </label>
+        <label> <input type="radio" name="guide3" value="800" />гід 2</label>
+        <label> <input type="radio" name="guide3" value="400" />гід 3</label>
+      </div>
+    </div>
+    <button id="calculate">Розрахувати</button>
+    <div>Результат: <span id="result"></span></div>
+  </body>
+</html>
