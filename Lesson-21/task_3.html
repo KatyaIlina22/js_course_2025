@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./src/task_3.js"></script>
+  </head>
+  <body>
+    <h4>Задача 1. Виводити на екран скільки хвилин користувач вже на сайті</h4>
+    <h3>Ви на сайті вже <span id="time"></span> хвилин</h3>
+    <h4>
+      Задача 2. Вводимо час початку процедури (процедура триває 30хв).
+      Визначити, чи процедура ще триває.
+    </h4>
+    <label
+      >Час початку процедури <input id="procedure__time" type="text"
+    /></label>
+    <button id="check">Перевірити</button>
+    <span id="result"></span>
+    <h4>
+      Задача 3. Визначити скільки залишилось до кінця робочого дня (до 17.00)
+    </h4>
+    <h3>До кінця робочого дня <span id="job__time"></span></h3>
+    <h4>
+      Задача 4. Створити функцію, яка дозволяє визначити, чи знаходиться вказана
+      дата і час у межах поточного тижня (від понеділка 0 год, 0хв, до неділі
+      23год.59хв)
+    </h4>
+    <label
+      >Ваша дата (YYYY-MM-DDTHH:MM)<input id="user__date" type="datetime-local"
+    /></label>
+    <button id="check__date">Перевірити</button>
+    <span id="date__result"></span>
+    <h4>Задача 6. Вивести скільки зараз годин у Лондоні, Парижі, Сіднеї.</h4>
+    <div>
+      <div>Час в Лондоні <span class="london__time"> </span></div>
+      <div>Час в Парижі <span class="paris__time"> </span></div>
+      <div>Час в Сіднеї <span class="sydney__time"> </span></div>
+    </div>
+    <div>
+      <h4>
+        Задача 7. Дано список студентів ім’я і дата народження: у формі тексту
+        (день.місяць.рік). Знайти найстаршого студента (у консолі)
+      </h4>
+      <h4>
+        Задача 9. Користувачка планувала оформила дектретну відпустку на 200
+        днів (дата початку відпустки вводиться). Визначити чи відпустка вже
+        триває і чи не закінчилась.
+      </h4>
+      <label
+        >Дата початку відпустки (день місяць рік)
+        <input id="vocation__time" type="text"
+      /></label>
+      <button id="check__vocation">Перевірити</button>
+      <span id="vocation__result"></span>
+    </div>
+    <h4>
+      Задача 10 . Дано дата виробництва йогурта (вводимо рік, місяць, день) та
+      кількість днів придатності. Визначити чи є він придатним на даний момент.
+    </h4>
+    <div>
+      <label
+        >Дата виробництва продукту (день місяць рік)
+        <input id="date__of__manufacture" type="text"
+      /></label>
+    </div>
+    <div>
+      <label
+        >Кількість днів придатності <input id="expiration__date" type="number"
+      /></label>
+    </div>
+
+    <button id="check__suitability">Перевірити</button>
+    <span id="suitability__result"></span>
+    <h4>
+      Задача 12. Сформувати масив з 1000 елементів від 1 до 800. Порівняти час
+      сортування бульбашкою і вставкою.(у консолі)
+    </h4>
+  </body>
+</html>
