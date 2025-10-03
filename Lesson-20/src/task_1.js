@@ -99,6 +99,26 @@ if (confirm('Почати тестування?')) {
                 yearOfManufacture: 1999,
                 price: "20000$"
             },
+            {
+                brand: "BMW",
+                yearOfManufacture: 2010,
+                price: "20000$"
+            },
+            {
+                brand: "opel",
+                yearOfManufacture: 2006,
+                price: "20000$"
+            },
+            {
+                brand: "tayota",
+                yearOfManufacture: 2019,
+                price: "20000$"
+            },
+            {
+                brand: "chevrolet",
+                yearOfManufacture: 1989,
+                price: "20000$"
+            },
         ]
         let carsFilter = new CarsFilter(cars)
         carsFilter.createFilter()
